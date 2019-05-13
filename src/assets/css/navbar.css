@@ -1,0 +1,80 @@
+.avatar {
+    border-radius: 55px;
+    overflow: hidden;
+}
+.avatar-sm {
+    width: 60px;
+    height: 60px;
+}
+.avatar-md {
+    width: 70px;
+    height: 70px;
+}
+.avatar-img-sm{
+    width: 60px;
+    height: 60px;
+}
+.avatar-img-md{
+    width: 70px;
+    height: 70px;
+}
+.navbar {
+    margin-bottom: 0px !important;
+    background-color: #ffffff;
+    color:#EF2D24
+}
+.logo-semillero{
+    width: 50%;
+}
+a.nav-link-custom {
+    color:#EF2D24 !important;
+    text-transform: uppercase;
+}
+a.nav-link-custom.active {
+    color:#EF2D24 !important;
+    font-weight: bold;
+}
+a.nav-link-custom.disabled {
+    color:rgb(223, 141, 137) !important;
+}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 80px;
+
+  }
+  
+  .topnav a {
+    float: left;
+    color: #EF2D24;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 80px;
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    font-size: 12px; 
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    height: 80px;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+    height: 80px;
+  }
+  
+  .topnav-right {
+    float: right;
+  }

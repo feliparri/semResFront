@@ -1,0 +1,11 @@
+.card-text-color {
+    color: #c75353 !important;
+}
+.card-text-detail-color {
+    color: #e3a9a9 !important;
+}
+.card-position{
+    width: 75%;
+    margin: -33px auto;
+    padding-bottom: 50px;
+}

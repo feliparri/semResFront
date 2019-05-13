@@ -1,0 +1,13 @@
+.container-informacion{
+    background-color: #2A3D81;
+}
+
+.table-eventos thead{
+    background:#4CAF50;
+    color: black;
+}
+
+.table-eventos tbody{
+    background-color: white;
+    color: black;
+}
