@@ -43,9 +43,7 @@
           }
         },
         computed: {
-          mostrarCal(){
-            return store.state.logedIn
-          }
+          mostrarCal(){ return store.state.logedIn }
         },
     }
    $(document).ready(function(){
@@ -60,6 +58,11 @@
         $('.container-cal').on('hidden.bs.collapse', function () {
             //resizeCalendarContainer();
         })
+
+        $('.list-dispo').on('click',function(){
+          $('.activeDispo').removeClass('activeDispo');
+          $(this).addClass('activeDispo');
+        });
    });
 
 
@@ -71,3 +74,13 @@
         $('.container-cal').attr('style','min-height:'+altura+'px;');
    }
 </script>
+
+<style>
+  .list-dispo{
+    cursor: pointer;
+  }
+  .activeDispo{
+    background-color: #fffa90;
+  }
+</style>
+

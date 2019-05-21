@@ -5,7 +5,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    logedIn: false // The TV inventory
+    logedIn: false ,// estado de logeo para eventos dentro de la app
+    errMessage: '' // mensaje de error de logeo
   },
 
   getters: {
@@ -13,18 +14,15 @@ export default new Vuex.Store({
   },
 
   mutations: {
-    logea(state, estado){
-      return state.logedIn = estado
+    logea(state, payload){
+      this.state.logedIn = payload.status
+      this.state.errMessage = payload.res
     }
   },
 
   actions: {
-    logea(state) {
-
-      //if(context.state.logedIn == false) {
-        // If we enough TVs, ask Jenny to remove it
-        state.commit('logea', true)
-      //}
+    logea(state, payload) {
+      state.commit('logea', payload)
     }
   }
 });

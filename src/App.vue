@@ -30,6 +30,8 @@ import Arriendo from './components/Arriendo'
 import Calendario from './components/Calendario'
 import Informacion from './components/Informacion'
 
+
+
 //use vuex
 //Vue.use(Vuex);
 
@@ -43,13 +45,17 @@ export default {
       //mostrar: this.$store.state.estadoLogin
     }
   },
+
   components:{
     Navbar,
     Slide,
     Arriendo,
     Calendario,
     Informacion,
-  }
+  },
+  methods: {
+
+  },
 }
 </script>
 
